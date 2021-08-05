@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from '../components/mainPageComponents/Section.js'
+import Footer from '../components/mainPageComponents/Footer.js'
 let Wrapper=styled.div`
 * {
     box-sizing: border-box;
@@ -52,6 +53,7 @@ function Home(){
     return(
         <Wrapper>
             <Section />
+            <Footer />
         </Wrapper>
     );
 }
