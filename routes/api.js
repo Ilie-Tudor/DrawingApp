@@ -4,6 +4,10 @@ const tokenVerification = require('../middleware/tokenVerification');
 const {validateWhiteboardName} = require('../middleware/inputValidators');
 
 
+router.get('/test', (req, res)=>{
+    res.json('merge');
+})
+
 router.get('/getuserinfo',tokenVerification, async(req,res)=>{
     try {
         let userinfo  = await pool.query('select user_name from users where user_id = $1',[req.user_id])
