@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node index",
+    "heroku-postbuild": "cd frontend && npm install && npm run build",
     "dev": "nodemon index"
   },
   "keywords": [],
