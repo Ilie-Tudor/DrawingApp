@@ -2,6 +2,7 @@ import React,{memo} from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import githubIcon from '../Icons/github.svg'
 import facebookIcon from '../Icons/facebook.svg'
 import instagramIcon from '../Icons/instagram.svg'
 import pencilRulerIcon  from '../Icons/pencil-ruler-solid.svg'
@@ -66,7 +67,7 @@ const Wrapper = styled.div`
 
   .social-icon-link {
     position: relative;
-    width: 30px;
+    width: 32px;
     padding: 10px;
 
   }
@@ -128,9 +129,9 @@ function Footer(){
                     </div>
                     <div className="footer-link-items">
                         <h2>Social Media</h2>
-                        <Link to='#'>Tudor's Linkedin</Link>
-                        <Link to='#'>Alex's Linkedin</Link>
-                        <Link to='#'>Daniel's Linkedin</Link>
+                        <a href='https://www.linkedin.com/in/tudor-ilie-546015200/'>Tudor's Linkedin</a>
+                        <a href='https://www.linkedin.com/in/alex-barbu-46a5aa183/'>Alex's Linkedin</a>
+                        <a href='https://www.linkedin.com/in/baciu-daniel-mihai-4867a11a9/'>Daniel's Linkedin</a>
                     </div>
                     <div className="footer-link-items">
                         <h2>Contact Us</h2>
@@ -149,22 +150,14 @@ function Footer(){
                 </div>
                 <small className='website-rights'>DRWNG © 2021</small>
                 <div className='social-icons'>
-                    <Link
-                    className='social-icon-link facebook'
-                    to='/'
+                    <a
+                    className='social-icon-link github'
+                    href='https://github.com/Ilie-Tudor/DrawingApp/tree/main'
                     target='_blank'
-                    aria-label='Facebook'
+                    aria-label='GitHub'
                     >
-                    <img src={facebookIcon} alt="facebook icon" />
-                    </Link>
-                    <Link
-                    className='social-icon-link instagram'
-                    to='/'
-                    target='_blank'
-                    aria-label='Instagram'
-                    >
-                    <img src={instagramIcon} alt="instagram icon" />
-                    </Link>
+                    <img src={githubIcon} alt="github icon" />
+                    </a>
                 </div>
                 </div>
             </section>

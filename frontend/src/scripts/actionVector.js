@@ -610,6 +610,7 @@ let actionVector = [{
             function f1(e) {
                 if (pressed) {
                     canvas.setActiveObject(e.target);
+                    
                     canvas.remove(canvas.getActiveObject());
                 }
             }
@@ -622,7 +623,7 @@ let actionVector = [{
                     object.set({
                         perPixelTargetFind: true,
                     });
-                    object.on("mouseover", f1);
+                    object.on("mousemove", f1);
                     object.set({
                         selectable: false
                     });
@@ -637,7 +638,7 @@ let actionVector = [{
                     object.set({
                         perPixelTargetFind: false,
                     });
-                    object.off("mouseover", f1);
+                    object.off("mousemove", f1);
                     object.set({
                         selectable: true
                     });
