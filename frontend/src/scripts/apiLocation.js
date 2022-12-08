@@ -1,5 +1,5 @@
 
-const remoteApi = 'https://drwng.herokuapp.com'
+const remoteApi = 'https://drawingapp.onrender.com'
 const localApi = 'http://localhost:5000'
 const prefix = remoteApi;
 
